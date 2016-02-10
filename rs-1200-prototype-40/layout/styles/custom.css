@@ -11,3 +11,5 @@ li {list-style-type:none;}
 span {color:brown;
       font-weight: bold;   
     }
+
+.hiddenDiv {display: none;}

@@ -3,6 +3,18 @@
 <head>
     <title>IICONN - FAQ</title>
     <meta charset="iso-8859-1">
+    <script src="js/jquery-2.2.0.js" type="text/javascript"> </script>
+    <script language="javascript" type="text/javascript">
+        $(document).ready(function () {
+            $(".toggle").click(function () {
+                if ($(this).next().is(":hidden")) {
+                    $(this).next().slideDown("fast");
+                } else {
+                    $(this).next().hide();
+                }
+            });
+        });
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="layout/styles/main.css" rel="stylesheet" type="text/css" media="all">
     <link href="layout/styles/mediaqueries.css" rel="stylesheet" type="text/css" media="all">
@@ -64,7 +76,12 @@
     <div class="wrapper row3">
         <div id="container">
             <!-- ################################################################################################ -->
-           <h3> Administrator FAQ</h3>
+            <span class="toggle">
+                <a href="#" style="cursor:pointer;"<h3> Administrator FAQ</h3> </a>
+                <br />
+            </span>
+            
+            <div class="hiddenDiv">
             <ul>
                 <li>Q: What is <span>Create New Job? </span> </li>
                 <li>A: This option is used to create a new job for translators/interpreters.</li>
@@ -85,50 +102,63 @@
                 <li>A: This search option is used to search for translators/interpreters that have signed up for language services. This feature is only
                 used when approving or rejecting a new translator/interpreter. You can search by first name, last name, or email address. </li>
               </ul>
+            </div>
             <br />
 
-            <h3> Staff FAQ</h3>
-              <ul>
-                <li>Q: What is <span>Create New Job? </span> </li>
-                <li>A: This option is used to create a new job for translators/interpreters.</li>
+            <span class="toggle">
+                  <a href="#" style="cursor:pointer;" <h3> Staff FAQ</h3> </a>
                 <br />
-                <li>Q: What is <span>Manage Jobs?</span></li>
-                <li>A: This option is used to manage the jobs for translators/interpreters.</li>
-                <br />
-                <li>Q: What is <span>Manage Account?</span></li>
-                <li>A: This option is used to manage your account.</li>
-                <br />
-                <li>Q: What is <span>Upload</span></li>
-                <li>A: This option is used to upload a document by choosing a file from the local system directory. </li>
-                <br />
-                <li>Q: What is <img src="images/FAQ Images/Search Jobs.png" /></li>
-                <li>A: This search option is used to search for a job. </li>
-             </ul>
+            </span>
+            
+            <div class="hiddenDiv">
+                <ul>
+                    <li>Q: What is <span>Create New Job? </span> </li>
+                    <li>A: This option is used to create a new job for translators/interpreters.</li>
+                    <br />
+                    <li>Q: What is <span>Manage Jobs?</span></li>
+                    <li>A: This option is used to manage the jobs for translators/interpreters.</li>
+                    <br />
+                    <li>Q: What is <span>Manage Account?</span></li>
+                    <li>A: This option is used to manage your account.</li>
+                    <br />
+                    <li>Q: What is <span>Upload</span></li>
+                    <li>A: This option is used to upload a document by choosing a file from the local system directory. </li>
+                    <br />
+                    <li>Q: What is <img src="images/FAQ Images/Search Jobs.png" /></li>
+                    <li>A: This search option is used to search for a job. </li>
+                </ul>
+            </div>
           <br />
+            
+            <span class="toggle">
+                <a href="#" style="cursor:pointer;" <h3> Translator/Interpreter FAQ</h3> </a>
+            </span>
 
-            <h3> Translator/Interpreter FAQ</h3>
-            <ul>
-                <li>Q: What is <span>Select Job? </span> </li>
-                <li>A: This option is used to select a job that you will have to complete. Jobs are created by staff members.</li>
-                <br />
-                <li>Q: What is <span>Download?</span></li>
-                <li>A: This option is used to download a document.</li>
-                <br />
-                <li>Q: What is <span>Manage Account?</span></li>
-                <li>A: This option is used to manage your account.</li>
-                <br />
-                <li>Q: What is <span>Upload?</span></li>
-                <li>A: This option is used to upload a document by choosing a file from the local system directory. </li>
-                <br />
-                <li>Q: What is <img src="images/FAQ Images/Search Jobs.png" /></li>
-                <li>A: This search option is used to search for a job. </li>
-                <br />
-                <li>Q: What is <span>View current job openings?</span></li>
-                <li>A: This is used to view all of the jobs that have not yet been assigned. This is how you will choose your work. </li>
-                <br />
-                <li>Q: What is <span>Manage your work?</span></li>
-                <li>A: This is to view all of the jobs that you have accepted. </li>
-            </ul>
+            <div class="hiddenDiv">
+                <ul>
+                    <li>Q: What is <span>Select Job? </span> </li>
+                    <li>A: This option is used to select a job that you will have to complete. Jobs are created by staff members.</li>
+                    <br />
+                    <li>Q: What is <span>Download?</span></li>
+                    <li>A: This option is used to download a document.</li>
+                    <br />
+                    <li>Q: What is <span>Manage Account?</span></li>
+                    <li>A: This option is used to manage your account.</li>
+                    <br />
+                    <li>Q: What is <span>Upload?</span></li>
+                    <li>A: This option is used to upload a document by choosing a file from the local system directory. </li>
+                    <br />
+                    <li>Q: What is <img src="images/FAQ Images/Search Jobs.png" /></li>
+                    <li>A: This search option is used to search for a job. </li>
+                    <br />
+                    <li>Q: What is <span>View current job openings?</span></li>
+                    <li>A: This is used to view all of the jobs that have not yet been assigned. This is how you will choose your work. </li>
+                    <br />
+                    <li>Q: What is <span>Manage your work?</span></li>
+                    <li>A: This is to view all of the jobs that you have accepted. </li>
+                </ul>
+
+            </div>
                 
 
             <!-- ################################################################################################ -->
@@ -209,4 +239,3 @@ window.jQuery || document.write('<script src="layout/scripts/jquery-latest.min.j
     <script src="layout/scripts/custom.js"></script>
 </body>
 </html>
- No newline at end of file
