@@ -70,45 +70,42 @@
   <div class="wrapper row3">
  <form name="Registration" action="#" method="post"  accept-charset='UTF-8'>
         <div class="form-input clear">
-        <tr>
-          <td><label for="ft_author">First Name <span class="required">*</span><br></label></td>
-          <td><input type="text" name="ft_author" id="ft_author" value=""></td>
-        </tr>
-        <tr>
-          <td><label for="ft_author">Last Name <span class="required" >*</span><br></label></td>
-          <td><input type="text" name="ft_author" id="ft_author" value="" style="background-color:lightgrey"></td>
-        </tr>
-        <tr>  
-        <td><label for="ft_email">Email <span class="required">*</span><br></label></td>
-        <td><input type="text" name="ft_email" id="ft_email" value=""></td>
-        </tr>  
-        <tr>  
-        <td><label for="ft_password">Password <span class="required">*</span><br></label></td>
-        <td><input type="text" name="ft_password" id="ft_password" value=""style="background-color:lightgrey"></td>
-        </tr>  
-        <tr>  
-        <td><label for="ft_password">Retype password <span class="required">*</span><br></label></td>
-        <td><input type="text" name="ft_password" id="ft_password" value=""></td>
-        </tr><tr> 
-        <td><label for="ft_author">Gender <span class="required">*</span><br></label></td>
-      <td><input type="radio" name="gender" value="male"><label>Male</label>
-  		</td><td>	<input type="radio" name="gender" value="female"><label>Female</label>
-  		</td></tr><br><tr>
-        <td><label for="ft_phone">Phone number <span class="required">*</span><br></label></td>
-        <td><input type="text" name="ft_phone" id="ft_phone" value=""style="background-color:lightgrey"></td>
-        </tr>
-         <tr>
-          <td><label for="ft_author">Address <span class="required">*</span><br></label></td>
-          <td><input type="text" name="ft_author" id="ft_author" value="" ></td>
-        </tr>
-         <tr>
-          <td><label for="ft_author">City <span class="required">*</span><br></label></td>
-          <td><input type="text" name="ft_author" id="ft_author" value=""style="background-color:lightgrey"></td>
-        </tr>
-        <tr>
-          <td><label for="ft_author">State <span class="required">*</span><br></label></td>
-          	<td valign="top">
-			  <select name="state">
+        <p>
+        <label for="ft_author">First Name: <span class="required">*</span><br></label>
+        <input type="text" name="ft_author" id="ft_author" value="">
+        </p>
+        <p>
+        <label for="ft_author">Last Name: <span class="required" >*</span><br></label>
+        <input type="text" name="ft_author" id="ft_author" value="" style="background-color:lightgrey">  
+        </p>
+        <p><label for="ft_email">Email: <span class="required">*</span><br></label>
+        <input type="text" name="ft_email" id="ft_email" placeholder="ex@gmail.com" value=""></p>
+        <p>  
+        <label for="ft_password">Password: <span class="required">*</span><br></label>
+        <input type="text" name="ft_password" id="ft_password" value=""style="background-color:lightgrey"></p>
+        <p>
+        <label for="ft_password">Retype password: <span class="required">*</span><br></label>
+        <input type="text" name="ft_password" id="ft_password" value="">
+        </p>
+        <p>
+        <label for="ft_author">Gender: <span class="required">*</span><br></label>
+      <input type="radio" name="gender" value="male" checked> Male
+  <input type="radio" name="gender" value="female"> Female
+  <input type="radio" name="gender" value="other"> Other<br>
+  		<br></p>
+        <p>
+        <label for="ft_phone">Phone number: <span class="required">*</span><br></label>
+        <input type="text" name="ft_phone" id="ft_phone" placeholder="10 digits" value=""style="background-color:lightgrey"></p>
+        <p>
+        <label for="ft_author">Address: <span class="required">*</span><br></label>
+        <input type="text" name="ft_author" placeholder="Street,Apt or Suite"id="ft_author" value="" >
+        </p>
+        <p>
+        <label for="ft_author">City: <span class="required">*</span><br></label>
+        <input type="text" name="ft_author" id="ft_author" value=""style="background-color:lightgrey">
+        </p>
+        <p><label for="ft_author">State: <span class="required">*</span><br></label>
+        <select name="state">
 			  	<option value="Select">Select State</option>
 				<option value="AL">Alabama</option>
 				<option value="AK">Alaska</option>
@@ -162,40 +159,36 @@
 				<option value="WI">Wisconsin</option>
 				<option value="WY">Wyoming</option>
 			</select>
- 				</td>
-        </tr><br>
-         <tr>
-          <td><label for="ft_author">Zip Code <span class="required">*</span><br></label></td>
-          <td><input type="text" name="ft_author" id="ft_author" value="" ></td>
-        </tr>
-        <br>
-  		<tr>
-	  		<td valign="top"><label for="Gender">Resume</label></td>
-			<td valign="top"><input type="file" name="file" id="file" style="background-color:lightgrey"></td>
-		</tr>
-		<tr>
-	  		<td valign="top"><label for="Gender">W9 Form</label></td>
-			<td valign="top"><input type="file" name="file" id="file" style="background-color:lightgrey"></td>
-		</tr>
-		<tr>
-	  		<td valign="top"><label for="Gender">Confidentiality Forms</label></td>
-			<td valign="top"><input type="file" name="file" id="file" style="background-color:lightgrey"></td>
-		</tr>
-		<tr>
-	  		<td valign="top"><label for="Gender">Certifications</label></td>
-			<td valign="top"><input type="file" name="file" id="file"style="background-color:lightgrey"></td>
-		</tr>
-		<tr>
-	  		<td valign="top"><label for="Gender">Other</label></td>
-			<td valign="top"><input type="file" name="file" id="file" style="background-color:lightgrey"></td>
-		</tr>
-		<tr>    
+ 		</p>
+        <p>
+        <label for="ft_author">Zip Code: <span class="required">*</span><br></label>
+        <input type="text" name="ft_author" id="ft_author" placeholder="000000" value="" >
+        </p>
+        <p>
+        <label for="Gender">Resume:</label>
+        <input type="file" name="file" id="file" style="background-color:lightgrey">
+        </p>
+        <p>
+        <label for="Gender">W9 Form:</label>
+        <input type="file" name="file" id="file" style="background-color:lightgrey">
+        </p>
+        <p>
+        <label for="Gender">Confidentiality Forms:</label>
+        <input type="file" name="file" id="file" style="background-color:lightgrey">
+        </p>
+        <p>
+        <label for="Gender">Certifications:</label>
+        <input type="file" name="file" id="file"style="background-color:lightgrey">
+        </p>
+        <p>
+        <label for="Gender">Other:</label>
+        <input type="file" name="file" id="file" style="background-color:lightgrey"></p>
+        <p>   
         <div class="form-message">
-        <td><label for="ft_author">Comments</label></td>
-         <td><textarea name="ft_message" id="ft_message" cols="25" rows="10">Tell about yourself in short notes</textarea></td>
+        <label for="ft_author">Comments:</label>
+        <textarea name="ft_message" id="ft_message" placeholder="Tell about yourself in short notes" cols="25" rows="10"></textarea></td>
   </textarea>
-        </div>
-        </tr>
+        </div></p>
 		  </div>
         <p>
          <br>
