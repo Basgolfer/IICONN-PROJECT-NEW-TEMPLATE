@@ -66,20 +66,17 @@
         <div class="one_half ">
         <h1>Registration Form</h1>
             <!-- ################################################################################################ -->
-         
- <div id="container" >
- 
- 
- <form name="Registration" action="#" method="post">
+    
+  <div class="wrapper row3">
+ <form name="Registration" action="#" method="post"  accept-charset='UTF-8'>
         <div class="form-input clear">
-        <table>
         <tr>
           <td><label for="ft_author">First Name <span class="required">*</span><br></label></td>
           <td><input type="text" name="ft_author" id="ft_author" value=""></td>
         </tr>
         <tr>
-          <td><label for="ft_author">Last Name <span class="required">*</span><br></label></td>
-          <td><input type="text" name="ft_author" id="ft_author" value="" ></td>
+          <td><label for="ft_author">Last Name <span class="required" >*</span><br></label></td>
+          <td><input type="text" name="ft_author" id="ft_author" value="" style="background-color:lightgrey"></td>
         </tr>
         <tr>  
         <td><label for="ft_email">Email <span class="required">*</span><br></label></td>
@@ -87,14 +84,18 @@
         </tr>  
         <tr>  
         <td><label for="ft_password">Password <span class="required">*</span><br></label></td>
-        <td><input type="text" name="ft_password" id="ft_password" value=""></td>
+        <td><input type="text" name="ft_password" id="ft_password" value=""style="background-color:lightgrey"></td>
         </tr>  
         <tr>  
         <td><label for="ft_password">Retype password <span class="required">*</span><br></label></td>
         <td><input type="text" name="ft_password" id="ft_password" value=""></td>
-        </tr> 
+        </tr><tr> 
+        <td><label for="ft_author">Gender <span class="required">*</span><br></label></td>
+      <td><input type="radio" name="gender" value="male"><label>Male</label>
+  		</td><td>	<input type="radio" name="gender" value="female"><label>Female</label>
+  		</td></tr><br><tr>
         <td><label for="ft_phone">Phone number <span class="required">*</span><br></label></td>
-        <td><input type="text" name="ft_phone" id="ft_phone" value=""></td>
+        <td><input type="text" name="ft_phone" id="ft_phone" value=""style="background-color:lightgrey"></td>
         </tr>
          <tr>
           <td><label for="ft_author">Address <span class="required">*</span><br></label></td>
@@ -102,7 +103,7 @@
         </tr>
          <tr>
           <td><label for="ft_author">City <span class="required">*</span><br></label></td>
-          <td><input type="text" name="ft_author" id="ft_author" value=""></td>
+          <td><input type="text" name="ft_author" id="ft_author" value=""style="background-color:lightgrey"></td>
         </tr>
         <tr>
           <td><label for="ft_author">State <span class="required">*</span><br></label></td>
@@ -162,49 +163,43 @@
 				<option value="WY">Wyoming</option>
 			</select>
  				</td>
-        </tr>
+        </tr><br>
          <tr>
           <td><label for="ft_author">Zip Code <span class="required">*</span><br></label></td>
           <td><input type="text" name="ft_author" id="ft_author" value="" ></td>
         </tr>
-        <tr>
-        <td><label for="ft_author">Gender <span class="required">*</span><br></label></td>
-        <td><input type="radio" name="gender" value="male"><label>Male</label>
-  			<input type="radio" name="gender" value="female"><label>Female</label></td>
-  		</tr>
- 		<tr>    
+        <br>
+  		<tr>
+	  		<td valign="top"><label for="Gender">Resume</label></td>
+			<td valign="top"><input type="file" name="file" id="file" style="background-color:lightgrey"></td>
+		</tr>
+		<tr>
+	  		<td valign="top"><label for="Gender">W9 Form</label></td>
+			<td valign="top"><input type="file" name="file" id="file" style="background-color:lightgrey"></td>
+		</tr>
+		<tr>
+	  		<td valign="top"><label for="Gender">Confidentiality Forms</label></td>
+			<td valign="top"><input type="file" name="file" id="file" style="background-color:lightgrey"></td>
+		</tr>
+		<tr>
+	  		<td valign="top"><label for="Gender">Certifications</label></td>
+			<td valign="top"><input type="file" name="file" id="file"style="background-color:lightgrey"></td>
+		</tr>
+		<tr>
+	  		<td valign="top"><label for="Gender">Other</label></td>
+			<td valign="top"><input type="file" name="file" id="file" style="background-color:lightgrey"></td>
+		</tr>
+		<tr>    
         <div class="form-message">
         <td><label for="ft_author">Comments</label></td>
-         <td><textarea name="ft_message" id="ft_message" cols="25" rows="10"></textarea></td>
+         <td><textarea name="ft_message" id="ft_message" cols="25" rows="10">Tell about yourself in short notes</textarea></td>
+  </textarea>
         </div>
         </tr>
-        <tr>
-        <td><label for="ft_author">Creation Date <span class="required">*</span><br></label></td>
-        <td><label>Put today's date</label></td>
-  		</tr>
-	  		<td valign="top"><label for="Gender">Resume</label></td>
-			<td valign="top"><input type="file" name="file" id="file"></td>
-		</tr>
-		</tr>
-	  		<td valign="top"><label for="Gender">W9 Form</label></td>
-			<td valign="top"><input type="file" name="file" id="file"></td>
-		</tr>
-		</tr>
-	  		<td valign="top"><label for="Gender">Confidentiality Forms</label></td>
-			<td valign="top"><input type="file" name="file" id="file"></td>
-		</tr>
-		</tr>
-	  		<td valign="top"><label for="Gender">Certifications</label></td>
-			<td valign="top"><input type="file" name="file" id="file"></td>
-		</tr>
-		</tr>
-	  		<td valign="top"><label for="Gender">Other</label></td>
-			<td valign="top"><input type="file" name="file" id="file"></td>
-		</tr>
-		  </table></div>
+		  </div>
         <p>
          <br>
-        <input type="submit" value="Cancel" class="button small red">
+        <input type="reset" value="Reset" class="button small red">
           <input type="submit" value="Submit" class="button small blue">
         </p><br><br><br>
       </form></div>
