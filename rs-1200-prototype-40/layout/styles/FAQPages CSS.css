@@ -1,0 +1,12 @@
+li {list-style-type:none;}
+
+span {color:brown;
+      font-weight: bold;   
+    }
+
+.hiddenDiv {display: none;}
+
+h3 {text-align: center;}
+
+ul {text-align:center;
+}
