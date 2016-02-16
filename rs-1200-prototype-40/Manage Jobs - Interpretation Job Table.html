@@ -15,6 +15,12 @@
             });
         });
     </script>
+    <script>
+        function changePage(url) 
+        {
+            window.location = url;
+        }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="layout/styles/main.css" rel="stylesheet" type="text/css" media="all">
     <link href="layout/styles/mediaqueries.css" rel="stylesheet" type="text/css" media="all">
@@ -88,12 +94,12 @@
             <div class="centerDiv">
                 <label id="labelForManageJobsPage"> Job Type:    </label>
 
-
-                <select>
-                    <option value="2"> Interpretation Job</option>
-                    <option value="1"> Translation Job</option>
-                </select>
-            </div>
+          
+                    <select onchange="changePage(this.value)">
+                        <option value="Manage Jobs - Interpretation Job Table.html"> Interpretation Job</option>
+                        <option value="Manage Jobs - Translation Job Table.html"> Translation Job</option>
+                    </select>
+</div>
 
             <br />
 
@@ -101,8 +107,9 @@
 
             <div class="centerDiv">
                 <input class="floatLeft" type="search" placeholder="Search Jobs">
+                <button id="searchButton" type="button">Search</button>
                 <input type="checkbox" /> Search for completed jobs
-                <button class="floatRight" type="button">Create New Job</button>
+                <button id="createNewJobButton" type="button">Create New Job</button>
             </div>
 
             <div class="clear"> </div>
