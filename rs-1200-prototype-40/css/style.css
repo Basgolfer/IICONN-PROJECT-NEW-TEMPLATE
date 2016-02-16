@@ -13,7 +13,7 @@ body{
 #content{
     margin:15px auto;
     text-align:center;
-    width:600px;
+    width:700px;
     position:relative;
     height:100%;
 }
@@ -37,7 +37,7 @@ body{
 .step{
     float:left;
     width:600px;
-	/*height:320px;*/
+	/* height:320px; */
 }
 #navigation{
     height:45px;

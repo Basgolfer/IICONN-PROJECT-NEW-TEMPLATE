@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>IICONN - FAQ</title>
+    <title>IICONN - Registration</title>
     <meta charset="iso-8859-1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="layout/styles/main.css" rel="stylesheet" type="text/css" media="all">
@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <script type="text/javascript" src="sliding.form.js"></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
     <!--[if lt IE 9]>
     <link href="layout/styles/ie/ie8.css" rel="stylesheet" type="text/css" media="all">
     <script src="layout/scripts/ie/css3-mediaqueries.min.js"></script>
@@ -20,7 +21,7 @@
      <style>
         span.reference{
             position:fixed;
-            left:5px;
+            left: 5px;
             top:5px;
             font-size:10px;
             text-shadow:1px 1px 1px #fff;
@@ -88,13 +89,15 @@
     <!-- ################################################################################################ -->
 
     <!-- content -->
-    <div class="wrapper row3">
+   <div class="wrapper row3">
         <div id="container">
-        <div class="one_half ">
-        <h1>Registration Form</h1>
+    <!--     <div class="one_half "> -->
+        <h1 style="margin-left: 20%; ">Registration Form</h1>
+        <p style="margin-left:23%;">(*) required </p>
             <!-- ################################################################################################ -->
     <div id="content">
-            <!-- <h1>Registration</h1> -->
+
+    
             <div id="wrapper">
                 <div id="steps">
                     <form id="formElem" name="formElem" action="" method="post">
@@ -124,15 +127,13 @@
                                 <label for="usertype">Account for*</label>
                                 <select id="usertype" name="usertype">
                                     <option value="staff" selected>IICONN Staff</option>
-                                    <option value="translator">Translator</option>
-                                    <option value="interpreter">Interpreter</option>
                                     <option value="both">Translator & Interpreter</option>
                                 </select>
                             </p>
                             <p>
         						<label for="ft_author">Gender*</label>
-      							<input type="radio" name="gender" value="male">Male 
-  								<input type="radio" name="gender" value="female">Female
+      							<input type="radio" name="gender" value="male" />male &nbsp	
+  								<input type="radio" name="gender" value="female" />female
   							</p>
                         
                         </fieldset>
@@ -143,15 +144,15 @@
                                 <input id="phone" name="phone" placeholder="e.g. 2123994747" type="tel" AUTOCOMPLETE=OFF />
                             </p>
                              <p>
-        						<label for="ft_author">Address <span class="required">*</span><br></label>
+        						<label for="ft_author">Address*</label>
         						<input type="text" name="ft_author" placeholder="Street,Apt or Suite"id="ft_author" value="" >
        						</p>
         					<p>
-        						<label for="ft_author">City <span class="required">*</span><br></label>
+        						<label for="ft_author">City*</label>
         						<input type="text" name="ft_author" id="ft_author" value="">
         					</p>
         					<p>
-        						<label for="ft_author">State <span class="required">*</span><br></label>
+        						<label for="ft_author">State*</label>
         						<select name="state">
 									<option value="Select">Select State</option>
 									<option value="AL">Alabama</option>
@@ -208,14 +209,14 @@
 								</select>
  							</p>
  							<p>
-									<label for="ft_author">Zip Code<span class="required">*</span><br></label>
-									<input type="text" name="ft_author" id="ft_author" placeholder="000000" value="" >
+									<label for="ft_author">Zip Code*</label>
+									<input type="text" name="ft_author" id="ft_author" placeholder="00000" value="" >
 							</p>
 							<p>   
 								
 								<label for="ft_author">Comments</label>
 								<textarea name="ft_message" id="ft_message" placeholder="Tell about yourself in short notes" cols="25" rows="5"></textarea></td>
-						  		</textarea>
+						  		
         					</p>
                         </fieldset>
                         <fieldset class="step">
@@ -246,6 +247,9 @@
         					<a href="Forms/fw9.pdf">W-9</a> &nbsp;
         					<a href="Forms/ConfidentialityAgreementSample.docx">IICONN Confidentiality Form</a>
         					</p>
+							<p>
+							<div class="g-recaptcha" data-sitekey="6LfOdhgTAAAAAIPmrHS6SDo9V96kuzqZCY7xlW7b"></div>
+							</p>
                         </fieldset>
                       <!-- 
   <fieldset class="step">
