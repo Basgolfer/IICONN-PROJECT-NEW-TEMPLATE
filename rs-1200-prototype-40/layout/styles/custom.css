@@ -1,0 +1,24 @@
+/*
+Responsive Template Name: RS-1200 Prototype 40
+File: Custom CSS
+Author: OS Templates
+Author URI: http://www.os-templates.com/
+Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
+*/
+
+li {list-style-type:none;}
+
+span {color:brown;
+      font-weight: bold;   
+    }
+
+.hiddenDiv {display: none;}
+
+
+input#ft {
+        width: 50%;
+   }
+
+textarea#ft {
+        width: 50%;
+   }
