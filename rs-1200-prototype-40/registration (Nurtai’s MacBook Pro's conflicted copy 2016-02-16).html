@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <script type="text/javascript" src="sliding.form.js"></script>
-	<script src='https://www.google.com/recaptcha/api.js'></script>
     <!--[if lt IE 9]>
     <link href="layout/styles/ie/ie8.css" rel="stylesheet" type="text/css" media="all">
     <script src="layout/scripts/ie/css3-mediaqueries.min.js"></script>
@@ -21,7 +20,7 @@
      <style>
         span.reference{
             position:fixed;
-            left:5px;
+            left: 5px;
             top:5px;
             font-size:10px;
             text-shadow:1px 1px 1px #fff;
@@ -90,15 +89,14 @@
 
     <!-- content -->
    <div class="wrapper row3">
-       		<div id="container">
+        <div id="container">
     <!--     <div class="one_half "> -->
-        <h1 style="margin-left: 20%; ">Registration Form</h1>
-        <p style="margin-left:23%;">(*) required </p>
-
+        <h1>Registration Form</h1>
+        <p>(*) required </p>
             <!-- ################################################################################################ -->
     <div id="content">
-		<h1 style="margin-left: 20%; ">Registration Form</h1>
-    
+
+            <!-- <h1>Registration</h1> -->
             <div id="wrapper">
                 <div id="steps">
                     <form id="formElem" name="formElem" action="" method="post">
@@ -128,6 +126,8 @@
                                 <label for="usertype">Account for*</label>
                                 <select id="usertype" name="usertype">
                                     <option value="staff" selected>IICONN Staff</option>
+                                    <option value="translator">Translator</option>
+                                    <option value="interpreter">Interpreter</option>
                                     <option value="both">Translator & Interpreter</option>
                                 </select>
                             </p>
@@ -217,7 +217,7 @@
 								
 								<label for="ft_author">Comments</label>
 								<textarea name="ft_message" id="ft_message" placeholder="Tell about yourself in short notes" cols="25" rows="5"></textarea></td>
-						  		
+						  		</textarea>
         					</p>
                         </fieldset>
                         <fieldset class="step">
@@ -248,11 +248,6 @@
         					<a href="Forms/fw9.pdf">W-9</a> &nbsp;
         					<a href="Forms/ConfidentialityAgreementSample.docx">IICONN Confidentiality Form</a>
         					</p>
-							<p>
-							<span>
-							<div class="g-recaptcha" data-sitekey="6LfOdhgTAAAAAIPmrHS6SDo9V96kuzqZCY7xlW7b"></div>
-							</span>
-							</p>
                         </fieldset>
                       <!-- 
   <fieldset class="step">
@@ -313,8 +308,8 @@
                     </ul>
                 </div>
             </div>
-        </div>
-  
+        <!-- </div> -->
+  		
       </div>
       </div>
             <!-- ################################################################################################ -->
