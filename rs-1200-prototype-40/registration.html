@@ -33,7 +33,6 @@
         }
         span.reference a:hover{
             color:#000;
-            
         }
         h1{
             color:#ccc;
@@ -41,6 +40,10 @@
             text-shadow:1px 1px 1px #fff;
             padding:20px;
         }
+        .spanRed {
+            color:red;
+        }
+
     </style>
 </head>
 <body class="">
@@ -92,9 +95,14 @@
    <div class="wrapper row3">
        		<div id="container">
     <!--     <div class="one_half "> -->
+<<<<<<< HEAD
         <h1 style="margin-left: 20%; ">Registration Form</h1>
         <p style="margin-left:23%;">(*) required </p>
 
+=======
+        <h1 style="margin-left: 20%; ">Translator/Interpreter Registration Form</h1>
+        <p style="margin-left:23%;">(<span class="spanRed">*</span>) Indicates a required field.</p>
+>>>>>>> 8441bd3509485a05e864a398e8c2442be5904399
             <!-- ################################################################################################ -->
     <div id="content">
 		<h1 style="margin-left: 20%; ">Registration Form</h1>
@@ -105,55 +113,55 @@
                         <fieldset class="step">
                             <legend>Account Information</legend>
                             <p>
-                                <label for="username">First name*</label>
+                                <label for="username">First name<span class="spanRed">*</span></label>
                                 <input id="username" name="username" />
                             </p>
                               <p>
-                                <label for="username">Last name*</label>
+                                <label for="username">Last name<span class="spanRed">*</span></label>
                                 <input id="username" name="username" />
                             </p>
                             <p>
-                                <label for="email">Email*</label>
+                                <label for="email">Email<span class="spanRed">*</span></label>
                                 <input id="email" name="email" placeholder="e.g. tom@domain.com" type="email" AUTOCOMPLETE=OFF />
                             </p>
                             <p>
-                                <label for="password">Password*</label>
+                                <label for="password">Password<span class="spanRed">*</span></label>
                                 <input id="password" name="password" type="password" AUTOCOMPLETE=OFF />
                             </p>
                             <p>
-                                <label for="password">Retype Password*</label>
+                                <label for="password">Retype Password<span class="spanRed">*</span></label>
                                 <input id="password" name="password" type="password" AUTOCOMPLETE=OFF />
                             </p>
-                            <p>
-                                <label for="usertype">Account for*</label>
-                                <select id="usertype" name="usertype">
-                                    <option value="staff" selected>IICONN Staff</option>
-                                    <option value="both">Translator & Interpreter</option>
-                                </select>
-                            </p>
-                            <p>
-        						<label for="ft_author">Gender*</label>
-      							<input type="radio" name="gender" value="male" />male &nbsp	
-  								<input type="radio" name="gender" value="female" />female
+                             <p>
+        						<label for="ft_author">Gender<span class="spanRed">*</span></label>
+                                 <select name="state">
+                                     <option value="Select">Select Gender</option>
+                                     <option value="M">Male</option>
+                                     <option value="F">Female</option>
+                                 </select>
   							</p>
+                           
+                         
+                           
+                 
                         
                         </fieldset>
                         <fieldset class="step">
                             <legend>Personal Information</legend>
                             <p>
-                                <label for="phone">Phone*</label>
+                                <label for="phone">Phone<span class="spanRed">*</span></label>
                                 <input id="phone" name="phone" placeholder="e.g. 2123994747" type="tel" AUTOCOMPLETE=OFF />
                             </p>
                              <p>
-        						<label for="ft_author">Address*</label>
+        						<label for="ft_author">Address<span class="spanRed">*</span></label>
         						<input type="text" name="ft_author" placeholder="Street,Apt or Suite"id="ft_author" value="" >
        						</p>
         					<p>
-        						<label for="ft_author">City*</label>
+        						<label for="ft_author">City<span class="spanRed">*</span></label>
         						<input type="text" name="ft_author" id="ft_author" value="">
         					</p>
         					<p>
-        						<label for="ft_author">State*</label>
+        						<label for="ft_author">State<span class="spanRed">*</span></label>
         						<select name="state">
 									<option value="Select">Select State</option>
 									<option value="AL">Alabama</option>
@@ -210,32 +218,28 @@
 								</select>
  							</p>
  							<p>
-									<label for="ft_author">Zip Code*</label>
+									<label for="ft_author">Zip Code<span class="spanRed">*</span></label>
 									<input type="text" name="ft_author" id="ft_author" placeholder="00000" value="" >
 							</p>
 							<p>   
 								
 								<label for="ft_author">Comments</label>
-								<textarea name="ft_message" id="ft_message" placeholder="Tell about yourself in short notes" cols="25" rows="5"></textarea></td>
+								<textarea name="ft_message" id="ft_message" placeholder="Please tell us the languages that you feel most comfortable with." cols="25" rows="5"></textarea>
 						  		
         					</p>
                         </fieldset>
                         <fieldset class="step">
                             <legend>Forms</legend>
                             <p>
-								<label for="Gender">Resume*</label>
+								<label for="Gender">Resume<span class="spanRed">*</span></label>
 								<input type="file" name="file" id="file">
 							</p>
 							<p>
-								<label for="Gender">W9 Form*</label>
+								<label for="Gender">Confidentiality Forms<span class="spanRed">*</span></label>
 								<input type="file" name="file" id="file">
 							</p>
 							<p>
-								<label for="Gender">Confidentiality Forms*</label>
-								<input type="file" name="file" id="file">
-							</p>
-							<p>
-								<label for="Gender">Certifications*</label>
+								<label for="Gender">Certifications<span class="spanRed">*</span></label>
 								<input type="file" name="file" id="file"/>
 							</p>
 							<p>
@@ -245,16 +249,22 @@
 							
         					<p>
         					<label for="ft_author">Available Forms</label>
-        					<a href="Forms/fw9.pdf">W-9</a> &nbsp;
+        					<a href="Forms/fw9.pdf" target="_blank">W-9</a>
+                                <br/>
         					<a href="Forms/ConfidentialityAgreementSample.docx">IICONN Confidentiality Form</a>
+                                <br />
+                                <br />
+                                Please note that you must email an administrator your W-9 Form.
         					</p>
+                            </fieldset>
+                            <!-- 
 							<p>
 							<span>
 							<div class="g-recaptcha" data-sitekey="6LfOdhgTAAAAAIPmrHS6SDo9V96kuzqZCY7xlW7b"></div>
 							</span>
 							</p>
                         </fieldset>
-                      <!-- 
+                      
   <fieldset class="step">
                             <legend>Settings</legend>
                             <p>
@@ -395,4 +405,3 @@ window.jQuery || document.write('<script src="layout/scripts/jquery-latest.min.j
     <script src="layout/scripts/custom.js"></script>
 </body>
 </html>
- No newline at end of file
